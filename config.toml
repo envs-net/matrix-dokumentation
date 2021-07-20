@@ -1,7 +1,7 @@
-baseURL = "https://doc.matrix.tu-dresden.de/"
+baseURL = "https://envs.net/chat/matrix/doc/"
 languageCode = "de-DE"
-DefaultContentLanguage = "de"
-title = "Matrix Dokumentation"
+DefaultContentLanguage = "en"
+title = "Matrix Documentation"
 theme = "learn"
 
 [params]
@@ -11,6 +11,7 @@ theme = "learn"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableMermaid = false
+
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
@@ -20,12 +21,13 @@ home = [ "HTML", "RSS", "JSON"]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
 [languages]
 	[languages.en]
-    		title = "Matrix Documentation"
-    		weight = 2
+		title = "Matrix Documentation"
+		weight = 1
 		languageName = "English"
 	[languages.de]
 		title = "Matrix Dokumentation"
-		weight = 1
+		weight = 2
 		languageName = "Deutsch"
